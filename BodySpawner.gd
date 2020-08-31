@@ -4,7 +4,7 @@ var body_scene = preload("res://Body.tscn")
 var rng = RandomNumberGenerator.new()
 var bodies = []
 var threads = []
-var num_threads = 12
+var num_threads = 8
 
 
 func _ready() -> void:
@@ -34,6 +34,7 @@ func _process(delta):
 
 
 func move_bodies(args):
+	# find start and end index in bodies that this thread will operate on
 	var start = bodies.size() / num_threads * args.index
 	var end = start + bodies.size() / num_threads
 	if args.index == threads.size() - 1:
