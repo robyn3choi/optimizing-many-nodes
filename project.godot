@@ -16,7 +16,7 @@ _global_script_class_icons={
 [application]
 
 config/name="optimize-many-nodes"
-run/main_scene="res://Main.tscn"
+run/main_scene="res://Multithreaded/Multithreaded.tscn"
 config/icon="res://icon.png"
 
 [rendering]

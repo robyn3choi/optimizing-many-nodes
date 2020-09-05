@@ -1,6 +1,6 @@
 extends Node
 
-var body_scene = preload("res://Body.tscn")
+var body_scene = preload("res://Multithreaded/BodyMT.tscn")
 var rng = RandomNumberGenerator.new()
 var bodies = []
 var threads = []

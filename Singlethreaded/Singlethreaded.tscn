@@ -1,0 +1,44 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Fps.gd" type="Script" id=1]
+[ext_resource path="res://TimeTo60Fps.gd" type="Script" id=2]
+[ext_resource path="res://Singlethreaded/BodySpawnerST.gd" type="Script" id=3]
+
+[node name="Singlethreaded" type="Node"]
+
+[node name="BodySpawnerST" type="Node" parent="."]
+script = ExtResource( 3 )
+
+[node name="FpsLabel" type="Label" parent="."]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -73.2119
+margin_top = 222.288
+margin_right = -33.2119
+margin_bottom = 236.288
+rect_scale = Vector2( 4, 4 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/font_outline_modulate = Color( 0, 0, 0, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+text = "0"
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TimeTo60Fps" type="Label" parent="."]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -281.634
+margin_top = 293.171
+margin_right = -130.634
+margin_bottom = 307.171
+rect_scale = Vector2( 4, 4 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/font_outline_modulate = Color( 0, 0, 0, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+align = 1
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
