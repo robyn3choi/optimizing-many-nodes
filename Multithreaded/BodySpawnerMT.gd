@@ -4,7 +4,7 @@ var body_scene = preload("res://Multithreaded/BodyMT.tscn")
 var rng = RandomNumberGenerator.new()
 var bodies = []
 var threads = []
-var num_threads = 8
+var num_threads = 12
 
 
 func _ready() -> void:
